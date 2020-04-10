@@ -14,82 +14,245 @@
 </head>
 
 <body>
-  <header>
+  <header class="jumbotron jumbotron-fluid p-1 mb-0 text-center hdr">
     <h1 class="display-3">Japonsko</h1>
     <h2>Základní informace</h2>
   </header>
+
   <main>
-    <div id="text">
-      <section id="uvod">
-        <h3>Úvod</h3>
-        <p>Japonsko je východoasijský stát v Tichém oceánu. Jméno Japonska doslova znamená Země vycházejícího slunce,
-          symbolem je sopka Fudži. Rozkládá se na stratovulkanické souostroví, jeho největší ostrovy jsou Hokkaidó,
-          Honšú, Široku a Kjúšú.</p>
-        <p>Japonsko je nejstarší monarchií, kde vládne konstituční monarcha, císař Naruhito.</p>
-        <img class="imgF" width="300" height="200" src="img/japonska_vlajka.jpg" alt="Vlajka Japonska">
-        <p>Státními symboly jsou symboly vládnoucího rodu, jako jsou chryzantéma, státní znak, kryptomerie japonská a
-          chryzantémový trůn, symbol novodobých panovníků. </p>
-      </section>
-      <section id="historie">
-        <h3>Strušná historie</h3>
-        <p>Historie Japonska je rozdělena do několika období.</p>
-        <p> Nejstarší bylo Džómon 10tis.-300 let př. n. l.
-          Japonsko bylo obýváno již v období mladého paleolitu. V ledových dobách mohli lidi, zvířata i rostliny
-          migrovat do Japonska a naopak. Japonsko bylo spojováno s asijským kontinentem.</p>
-        <p> Další období začíná při
-          masivnější migraci lidí a použití nových technik, nazývané jako Jajoi, které trvalo od 300l.př.n.l.-710n.l.
-        </p>
-        <p>
-          Následovalo období Nara a to je období vzniku Japonska, které bylo založeno císařem Džimmu podle japonské
-          mytologie. Dále zde bylo několik císařů v různých obdobích. </p>
-        <p>Moderní doba začala vládnutím císaře Meidži, který
-          začal komunikovat se západní civilizací a s tím začal modernizaci a industrilizaci, tzv reformy Meidži. Od té
-          doby má každý císař své období.</p>
-        <p>Uskutečnily se různé války s Čínou a Koreí, proto byla například Korea
-          okupována Japonskem a další území Číny a některé ostrovy Indonésie. Pořádalo masakry před 2. světovou válkou v
-          Číně. Nejznámější je masakr v Nankingu. Následně rozpoutalo 2. světovou válku v Asii, kterou prohrálo a bylo
-          do roku 1952 v okupaci USA, ale stále jejich armáda je přítomna v Japonsku. </p>
 
-      </section>
-      <section id="geogragie">
-        <h3>Stručná geografie</h3>
-        <p>Jsou zde čtyři hlavní ostrovy Hokkaidó, Honšú, Šikoku, Kjušů, kde Honšú je největší.
-          Je velmi hornatá, nejvyšší horou je hora Fudži 3776 m.n.m, která je součástí Japonských Alp, které se rozkládá
-          v regionu Čubu, centrální region ostrova Honšu. Dále je zde hodně menších pohoří. Nachází se na hranici tří
-          tektonických desek, proto jsou zde časté zemětřesení a tsunami.</p>
+    <nav class="navbar navbar-expand-sm navbar-dark" id="nav">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+        aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="dropdownId" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Základní informace</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+              <a class="dropdown-item" href="#uvod">Úvod</a>
+              <a class="dropdown-item" href="#historie">Stručná historie</a>
+              <a class="dropdown-item" href="#geografie">Stručná geografie</a>
+              <a class="dropdown-item" href="#politika">Politika</a>
+              <a class="dropdown-item" href="#obyvatelstvo">Obyvatelstvo</a>
+              <a class="dropdown-item" href="#kultura">Kultura</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Úvodní stránka <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Historie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Zajímavosti</a>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle bg-info" href="#" id="dropdownId2" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Otestujte si své znalost</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="dropdown-item " href="#">Výukové materiály</a>
+                <a class="dropdown-item " href="#">Procvičování</a>
+                <a class="dropdown-item " href="#">Testy</a>
+              </div>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn tlacitko my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <div class="grid-container">
+      <div class="container" id="main">
+        <section id="uvod">
+          <h3>Úvod</h3>
+          <div class="text">
+            <img class="imgF vlajka" src="img/japonska_vlajka.jpg" alt="Vlajka Japonska">
+            <p>Japonsko je východoasijský stát v Tichém oceánu. Jméno Japonska doslova znamená Země vycházejícího
+              slunce,
+              symbolem je sopka Fudži. Rozkládá se na stratovulkanické souostroví, jeho největší ostrovy jsou Hokkaidó,
+              Honšú, Široku a Kjúšú.</p>
 
-      </section>
-      <section id="politika">
-        <h3>Politika</h3>
-        <p>Do změny ústavy císařem Hirohitem roku 1947, byla absolutistická monarchie. Podle ní je císař jen
-          reprezentativní. Nyní je konstituční monarchií. První konstituční monarcha byl císař Meidži,ale měl více
-          pravomocí než nynější císaři.</p>
+            <p>Japonsko je nejstarší monarchií, kde vládne konstituční monarcha, císař Naruhito.</p>
 
-        <p>Zákonnou moc vykonavá Japonský parlament a Sněmovna rádců, většinu moci má v rukou japonský premiér Šinzó Abe
-        </p>
-        <p>Je členem G4, kteří si navzájem drží místa v Radě bezpečnosti OSN. G8 je skupina osmi ekonomicky vyspělých
-          států světa, původně G6 bez Ruska a Kanady. </p>
-        <p>Administrativně se dělí nyní na 47 prefektur, které jsou součástí 8 regionů.</p>
-        <p>Hokkaidó, Tóhoku, Kantó, Čúbu, Kansai, Čúgoku, Šikoku a Kjúšú a Okinawa.</p>
-      </section>
-      <section id="obyvatelstvo">
-        <h3>Obyvatelstvo</h3>
-        <p>Většina žije na ostrově Honšú, celkově je etnicky z 98,5 % tvořena rodilými Japonci(asi 127 mil.), dále
-          nejvíce Korejci (632 tis.), následně Číňany (381 tis.) a Brazilci (265 tis.).</p>
-        <p>Náboženství 51,82 % šintó, tradiční japonské náboženství, 34,9 % budhismus, šintoické sekty, křesťanství a
-          bez odpovědi. </p>
+            <p>Státními symboly jsou symboly vládnoucího rodu, jako jsou chryzantéma, státní znak, kryptomerie japonská
+              a
+              chryzantémový trůn, symbol novodobých panovníků. </p>
+          </div>
+        </section>
+        <section id="historie">
+          <h3>Stručná historie</h3>
+          <div class="text">
+            <img class="imgF" src="img/meidzi_cisar.jpg" alt="Císař Meidži">
+            <p>Historie Japonska je rozdělena do několika období.</p>
+            <p> Nejstarší bylo Džómon 10tis.-300 let př. n. l.
+              Japonsko bylo obýváno již v období mladého paleolitu. V ledových dobách mohli lidi, zvířata i rostliny
+              migrovat do Japonska a naopak. Japonsko bylo spojováno s asijským kontinentem.</p>
+            <p> Další období začíná při
+              masivnější migraci lidí a použití nových technik, nazývané jako Jajoi, které trvalo od
+              300l.př.n.l.-710n.l.
+            </p>
+            <p>
+              Následovalo období Nara a to je období vzniku Japonska, které bylo založeno císařem Džimmu podle japonské
+              mytologie. Dále zde bylo několik císařů v různých obdobích. </p>
+            <p>Moderní doba začala vládnutím císaře Meidži, který
+              začal komunikovat se západní civilizací a s tím začal modernizaci a industrilizaci, tzv reformy Meidži. Od
+              té
+              doby má každý císař své období.</p>
+            <p>Uskutečnily se různé války s Čínou a Koreí, proto byla například Korea
+              okupována Japonskem a další území Číny a některé ostrovy Indonésie. Pořádalo masakry před 2. světovou
+              válkou v
+              Číně. Nejznámější je masakr v Nankingu. Následně rozpoutalo 2. světovou válku v Asii, kterou prohrálo a
+              bylo
+              do roku 1952 v okupaci USA, ale stále jejich armáda je přítomna v Japonsku. </p>
+          </div>
 
-      </section>
-      <section id="kultura">
-        <h3>Kultura</h3>
-        <p>Zahrňuje tradiční umění, jako např. origami, ikebana, kaligrafie (ukio-e), tradiční divadlo, dále mangu,
-          anime. Zahrňuje se zde i tradiční architektura, kimona. Dále nespočet bojových umění.
-          Přinesli i různé pochoutky z oblasti gastronomie do světa, jako je např. Suši, sašimi, dále miso pasta, anko
-          pasta a wasabi. Japonci konzumují velké množství druhů ryb, více než 3 tis. </p>
+        </section>
+        <section id="geografie">
+          <h3>Stručná geografie</h3>
+          <div class="text">
+            <img class="imgF" src="img/fudzi.jpg" alt="Nejvyšší hora Japonska fudži">
+            <p>Jsou zde čtyři hlavní ostrovy Hokkaidó, Honšú, Šikoku, Kjušů, kde Honšú je největší.
+              Je velmi hornatá, nejvyšší horou je hora Fudži 3776 m.n.m, která je součástí Japonských Alp, které se
+              rozkládá
+              v regionu Čubu, centrální region ostrova Honšu. Dále je zde hodně menších pohoří. Nachází se na hranici
+              tří
+              tektonických desek, proto jsou zde časté zemětřesení a tsunami.</p>
+          </div>
+        </section>
+        <section id="politika">
+          <h3>Politika</h3>
+          <div class="text">
+            <img class="imgF" src="img/prefektury_japonska.png" alt="Prefektury Japonska">
+            <p>Do změny ústavy císařem Hirohitem roku 1947, byla absolutistická monarchie. Podle ní je císař jen
+              reprezentativní. Nyní je konstituční monarchií. První konstituční monarcha byl císař Meidži,ale měl více
+              pravomocí než nynější císaři.</p>
 
-      </section>
+            <p>Zákonnou moc vykonavá Japonský parlament a Sněmovna rádců, většinu moci má v rukou japonský premiér Šinzó
+              Abe
+            </p>
+            <p>Je členem G4, kteří si navzájem drží místa v Radě bezpečnosti OSN. G8 je skupina osmi ekonomicky
+              vyspělých
+              států světa, původně G6 bez Ruska a Kanady. </p>
+            <p>Administrativně se dělí nyní na 47 prefektur, které jsou součástí 8 regionů.</p>
+            <p>Hokkaidó, Tóhoku, Kantó, Čúbu, Kansai, Čúgoku, Šikoku a Kjúšú a Okinawa.</p>
+          </div>
+        </section>
+        <section id="obyvatelstvo">
+          <h3>Obyvatelstvo</h3>
+          <div class="text">
+            <img class="imgF" src="img/sinto.png" alt="Část šintoického chrámu">
+            <p>Většina žije na ostrově Honšú, celkově je etnicky z 98,5 % tvořena rodilými Japonci(asi 127 mil.), dále
+              nejvíce Korejci (632 tis.), následně Číňany (381 tis.) a Brazilci (265 tis.).</p>
+            <p>Náboženství 51,82 % šintó, tradiční japonské náboženství, 34,9 % budhismus, šintoické sekty, křesťanství
+              a
+              bez odpovědi. </p>
+          </div>
+
+        </section>
+        <section id="kultura">
+          <h3>Kultura</h3>
+          <div class="text">
+            <img class="imgF" src="img/ikenbana.jpg" alt="Tradiční japonské aranžování květin">
+            <p>Zahrňuje tradiční umění, jako např. origami, ikebana, kaligrafie (ukio-e), tradiční divadlo, dále mangu,
+              anime. Zahrňuje se zde i tradiční architektura, kimona. Dále nespočet bojových umění.
+              Přinesli i různé pochoutky z oblasti gastronomie do světa, jako je např. Suši, sašimi, dále miso pasta,
+              anko
+              pasta a wasabi. Japonci konzumují velké množství druhů ryb, více než 3 tis. </p>
+          </div>
+
+        </section>
+      </div>
+      <aside class="text">
+        <h3>Základní informace</h3>
+        <h4>Geografie</h4>
+        <img class="img-fluid" src="img/japan_location.png" alt="Poloha japonska ve světě">
+        <table class="table table-responsive">
+          <tbody>
+            <tr>
+              <th>Hlavní město</th>
+              <td>Tokio</td>
+            </tr>
+            <tr>
+              <th>Rozloha</th>
+              <td>377 835 km² (61. na světě) </td>
+            </tr>
+            <tr>
+              <th>Nejvyšší bod</th>
+              <td>Fudži (3776 m n. m.)-35&deg;21&prime;45&Prime; s.š., 138&deg;43&prime;50&Prime; v.d. </td>
+            </tr>
+            <tr>
+              <th>Poloha</th>
+              <td>45,5&deg;s.š.-31&deg;s.š. 129&deg;v.d.-149&deg;v.d.</td>
+            </tr>
+          </tbody>
+        </table>
+        <h4>Obyvatelstvo</h4>
+        <table class="table table-responsive">
+          <tbody>
+            <tr>
+              <th>Počet obyvatel</th>
+              <td>126 617 563 (11. na světě, 2020) </td>
+            </tr>
+            <tr>
+              <th>Hustota zalidnění</th>
+              <td>337 ob. / km<sup>2</sup>(32. na světě) </td>
+            </tr>
+            <tr>
+              <th>Jazyk</th>
+              <td>Japonština</td>
+            </tr>
+            <tr>
+              <th>Úřední jazyk</th>
+              <td>Japonština</td>
+            </tr>
+            <tr>
+              <th>Národnostní složení</th>
+              <td>Japonci 98,5&percnt;, Korejci 5&permil;, Číňané 3&permil;, Brazilci 2&permil;, Filipínci 1,2&permil;,
+                atd.</td>
+            </tr>
+            <tr>
+              <th>Náboženství</th>
+              <td><abbr title="Tradiční japonské náboženství">Šintó</abbr>51,82,&percnt;, budhismus 34,9&percnt;,
+                šintoické sekty 4&percnt;, křesťanství 2,3&percnt;, 6,8&percnt; bez odpovědi</td>
+            </tr>
+            <tr>
+              <th>Hospodářství</th>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <h4>Státní útvar</h4>
+        <table class="table table-responsive">
+          <tbody>
+            <tr>
+              <th>Státní zřízení</th>
+              <td>konstituční monarchie</td>
+            </tr>
+            <tr>
+              <th>Císař</th>
+              <td>Naruhito</td>
+            </tr>
+            <tr>
+              <th>Premiér</th>
+              <td>Šinzó Abé</td>
+            </tr>
+            <tr>
+              <th>Měna</th>
+              <td><abbr title="japonský jen - Japanese yen">JPY</abbr></td>
+            </tr>
+            <tr>
+              <th>kurz z 9.4.2020</th>
+              <td>100 JPY = 22,736 CZK</td>
+            </tr>
+          </tbody>
+        </table>
+      </aside>
     </div>
   </main>
+
   <footer>
     <p id="footer"> &copy;Tomáš Kuča IT2 </p>
   </footer>

@@ -1,0 +1,14 @@
+{
+  "name": "kurzovni-listek",
+  "version": "1.0.0",
+  "description": "Vypise aktualni kurz yen a czk",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tomáš Kuča",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
