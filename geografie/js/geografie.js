@@ -314,7 +314,7 @@ $(function () {
 	$("circle").on("click", function () {
 		let id = $(this).attr("id");
 		let city = prefektury.find(item => { return item.id == id });
-		$("div #konec").hide(500, function(){
+		$("main #konec").hide(500, function(){
 			$("#konec").html(`<h4>${city.title}</h4><p>${city.popis}</p>`);
 		}).show(500);
 
@@ -322,7 +322,7 @@ $(function () {
 	$("g rect").on("click", function () {
 		let id = $(this).attr("id");
 		let unes = unesco.find(item => { return item.id == id });
-		$("div #konec").fadeOut(200, function () {
+		$("main #konec").fadeOut(200, function () {
 			/* Pomocí metody html vepíšeme informace do tagu <div> s id #odstavec */
 			$(this).html(`
           <h4 class=" p-2 mt-2">${unes.title}</h4><p>
