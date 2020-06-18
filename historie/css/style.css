@@ -1,0 +1,129 @@
+html,body,header {
+    margin: 0;
+}
+footer{
+    background-color:#ff8e31;
+    text-align: center; 
+    padding: 2em;
+}
+section{
+    color: white;
+    padding: 0 2em;
+    margin: 0 auto 0 auto;
+    
+    
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    padding: 0;
+    margin: 0;
+}
+.grid-container-cards {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    padding: 0em;
+    margin: 0;
+    margin-right: 0;
+    
+}
+.osobnost {
+    margin: 2em 1em 0 1em;
+    padding: 0;
+    color: black;
+}
+
+.dropdown-item{
+    background-color: white!important;
+    color: black!important;
+}
+
+#nav {
+    background-color: #1F29DF;
+}
+.tlacitko{
+    border: 1px solid #D22500;
+    color: #D22500;
+}
+.tlacitko:hover{
+    background-color: #D22500;
+    color: white;
+}
+.hdr{
+    background-color: #454DE2;
+}
+header, #text, footer, aside{
+    color: white;
+}
+h3{
+    text-align: center;
+    background-color:#2CE571;
+    margin:0;
+    padding: 0;
+}
+h4{
+    margin: 0.5em 0;
+    color: #00CA4B;
+}
+
+section div.text{
+    background-color: #FF5431;
+    overflow: auto;
+}
+
+p{
+    /*background-color: #FF5431;*/
+    margin: 0 auto 0 auto;
+    /*padding: 1em 2em;*/
+}
+
+#main {
+    margin-right: 2em;
+    border-right: 3px solid red;
+    border-left: 4px solid red; 
+}
+.text {
+    margin: 2em 0;
+}
+.vlajka{
+    width: 200px;
+    height: 150px;
+}
+section{
+    clear: both;
+}
+.imgF{
+    float: right;
+
+    margin: 3em;
+}
+img{
+    height: 25em;
+}
+
+table th, table td{
+    margin: 1em;
+    color: white;
+    border: none;
+}
+#text table th, table td{
+    margin: 1em;
+    color: white;
+    border: none;
+}
+tr:nth-child(even) {
+    background-color: #FF7C60;
+  }
+  tr:nth-child(even) p.udalost-popis{
+    background-color: #FF5431;
+  }
+tr:nth-child(odd) {
+    background-color: #FF5431;
+  }
+  tr:nth-child(odd) p.udalost-popis{
+    background-color: #FF7C60;
+  }
+  i{
+      margin-right: 0.5em;
+  }
+  

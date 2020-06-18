@@ -1,9 +1,10 @@
 html,body,header {
     margin: 0;
 }
-footer{
+footer p{
     background-color: /*rgb(255, 142, 49)*/#ff8e31;
     text-align: center; 
+    padding: 2em;
 }
 section{
     color: white;
